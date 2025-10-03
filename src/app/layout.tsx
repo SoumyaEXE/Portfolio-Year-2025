@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import "leaflet/dist/leaflet.css";
 import Script from "next/script";
-import {Analytics} from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import { DOMAIN, metadata as appMetadata, viewport as appViewport } from "./metadata";
 
 const poppins = Poppins({
@@ -14,7 +14,6 @@ const poppins = Poppins({
 
 export const metadata = appMetadata;
 export const viewport = appViewport;
-
 
 export default function RootLayout({
   children,
@@ -77,7 +76,6 @@ export default function RootLayout({
     }
   };
 
- 
   return (
     <html lang="en" className="h-full dark" suppressHydrationWarning>
       <head>

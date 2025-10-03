@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const DOMAIN = "https://isoumya.vercel.app";
+export const DOMAIN = "https://soumyaexe.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN),
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Sagnik Sahoo | Developer Portfolio",
+    title: "Soumyadeep Dey | Developer Portfolio",
     startupImage: [
       {
         url: `${DOMAIN}/apple-touch-startup-image-640x1136.png`,
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  applicationName: "Sagnik Sahoo | Developer Portfolio",
+  applicationName: "Soumyadeep Dey | Developer Portfolio",
   formatDetection: {
     telephone: false,
     address: false,
