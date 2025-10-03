@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const DOMAIN = "https://soumyaexe.vercel.app";
+export const DOMAIN = "https://soumya-wtf.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN),
