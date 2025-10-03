@@ -1,5 +1,5 @@
 import { memo, useState, useCallback } from "react"
-import { motion } from "framer-motion"
+import { motion, easeInOut } from "framer-motion"
 
 interface NewMessagesNotificationProps {
   count: number
@@ -61,7 +61,7 @@ const GLOW_ANIMATION = {
   transition: {
     duration: 2.5,
     repeat: Infinity,
-    ease: "easeInOut"
+    ease: easeInOut
   }
 };
 
