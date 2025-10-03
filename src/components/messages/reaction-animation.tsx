@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, easeOut, easeInOut } from 'framer-motion';
+import { Transition } from 'framer-motion';
 
 interface ReactionAnimationProps {
   emoji: string;
@@ -37,7 +38,17 @@ const ANIMATION_CONFIG = {
   }
 };
 
-const PARTICLE_CONFIGS = [
+interface ParticleConfig {
+  className: string;
+  animate: {
+    y?: [number, number];
+    x?: [number, number];
+    opacity?: [number, number];
+  };
+  transition: Transition;
+}
+
+const PARTICLE_CONFIGS: ParticleConfig[] = [
   { 
     className: "w-3 h-3 top-0 left-[40%]",
     animate: { y: [-2, -12], opacity: [0.7, 0] },
