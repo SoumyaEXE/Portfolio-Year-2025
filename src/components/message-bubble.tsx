@@ -10,6 +10,7 @@ import { LocationMessage } from "./map-widget"
 import { PhotosMessage } from "./messages/photos-message"
 import { ResumeMessage } from "./messages/resume-message"
 import { TextMessage } from "./messages/text-message"
+import { SocialMediaMessage } from "./messages/social-message"
 
 interface MessageBubbleProps {
   message: MessageType
@@ -24,6 +25,7 @@ const MAX_WIDTHS = {
   project: "max-w-[280px]",
   music: "max-w-[320px]", 
   location: "max-w-[240px]",
+  social: "max-w-[320px]",
   default: "max-w-[85%]"
 } as const
 
@@ -111,6 +113,15 @@ const MessageBubble = memo<MessageBubbleProps>(({ message }) => {
           <ProjectMessage 
             content={message.content} 
             project={message.project} 
+            {...commonProps}
+          />
+        )
+        
+      case "social":
+        return message.preview && (
+          <SocialMediaMessage
+            content={message.content}
+            preview={message.preview}
             {...commonProps}
           />
         )

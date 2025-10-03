@@ -79,6 +79,21 @@ export interface ResumeMessage extends BaseMessage {
   resumeLinkText?: string;
 }
 
+export interface SocialMediaPreview {
+  url: string;
+  title: string;
+  description?: string;
+  image?: string;
+  siteName: string;
+  favicon?: string;
+}
+
+export interface SocialMediaMessage extends BaseMessage {
+  type: "social";
+  content?: string;
+  preview: SocialMediaPreview;
+}
+
 export type MessageType = 
   | TextMessage
   | BlogMessage
@@ -87,7 +102,8 @@ export type MessageType =
   | MusicMessage
   | CTAMessage
   | PhotosMessage
-  | ResumeMessage;
+  | ResumeMessage
+  | SocialMediaMessage;
 
 export type MessageVariant = MessageType['type'];
 
@@ -101,7 +117,8 @@ export const MESSAGE_TYPES = {
   MUSIC: 'music',
   CTA: 'cta',
   PHOTOS: 'photos',
-  RESUME: 'resume'
+  RESUME: 'resume',
+  SOCIAL: 'social'
 } as const;
 
 export const SENDERS = {

@@ -92,40 +92,70 @@ export function generateInitialMessages(markdownBlogs?: Blog[]): MessageType[] {
       content: "",
       type: "music",
       sender: "assistant",
-        },
-          {
-        id: "5",
-        content: "based in india rn.",
-        type: "text",
-        sender: "assistant",
-          },
-          {
-        id: "5.1",
-        content: "",
-        type: "location",
-        location: {
-          city: "Howrah, WB, India",
-        },
-        sender: "assistant",
-          },
-          {
-        id: "6",
-        content: "check my github for projects:",
-        type: "text",
-        sender: "assistant",
-          },
-          {
-        id: "6.1",
-        type: "text",
-        content: "https://github.com/SoumyaEXE",
-        sender: "assistant"
-          },
-          {
-        id: "6.2",
-        type: "text",
-        content: "building some cool projects gng, will showcase soon to y'all chat haha!",
-        sender: "assistant"
+    },
+    {
+      id: "5",
+      content: "based in india rn.",
+      type: "text",
+      sender: "assistant",
+    },
+    {
+      id: "5.1",
+      content: "",
+      type: "location",
+      location: {
+        city: "Howrah, WB, India",
       },
+      sender: "assistant",
+    },
+    {
+      id: "6",
+      content: "find me on social media:",
+      type: "text",
+      sender: "assistant",
+    },
+    {
+      id: "6.1",
+      type: "social",
+      content: "Check out my GitHub profile",
+      preview: {
+        url: "https://github.com/SoumyaEXE",
+        title: "SoumyaEXE (@SoumyaEXE) • GitHub",
+        siteName: "GitHub",
+        favicon: "/favicon/github.svg"
+      },
+      sender: "assistant"
+    },
+    {
+      id: "6.2",
+      type: "social",
+      content: "Connect with me on LinkedIn",
+      preview: {
+        url: "https://www.linkedin.com/in/isoumyadeyy",
+        title: "Soumyadeep Dey (@isoumyadeyy) • LinkedIn",
+        siteName: "LinkedIn",
+        favicon: "/favicon/linkedin.svg"
+      },
+      sender: "assistant"
+    },
+    {
+      id: "6.3",
+      type: "social",
+      content: "Follow me on Instagram",
+      preview: {
+        url: "https://instagram.com/7n7vc",
+        title: "7n7vc (@7n7vc) • Instagram",
+        siteName: "Instagram",
+        favicon: "/favicon/instagram.svg"
+      },
+      sender: "assistant"
+    },
+    {
+      id: "6.4",
+      type: "text",
+      content: "building some cool projects gng, will showcase soon to y'all chat haha!",
+      sender: "assistant"
+    },
     {
       id: "7",
       content: "hmu if u wanna connect.",
@@ -140,4 +170,3 @@ export function generateInitialMessages(markdownBlogs?: Blog[]): MessageType[] {
     },
   ];
 }
-

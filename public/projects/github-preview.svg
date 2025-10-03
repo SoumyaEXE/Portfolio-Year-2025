@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <rect width="400" height="200" fill="#ffffff"/>
+  <rect x="20" y="20" width="360" height="160" rx="8" fill="white" stroke="#e1e4e8" stroke-width="1"/>
+  <path d="M50 50c0 8.837-7.163 16-16 16s-16-7.163-16-16 7.163-16 16-16 16 7.163 16 16z" fill="#181717"/>
+  <text x="75" y="55" font-family="Arial, sans-serif" font-size="16" fill="#24292e" font-weight="bold">SoumyaEXE</text>
+  <text x="75" y="75" font-family="Arial, sans-serif" font-size="12" fill="#586069">Software Developer</text>
+  <rect x="50" y="100" width="300" height="60" rx="4" fill="#f6f8fa" stroke="#e1e4e8" stroke-width="1"/>
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="12" fill="#0366d6">Repositories: 42</text>
+  <text x="60" y="140" font-family="Arial, sans-serif" font-size="12" fill="#0366d6">Followers: 128</text>
+  <path d="M330 45c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10z" fill="#181717"/>
+  <path d="M335 45l-5 5-5-5 5-5 5 5z" fill="#ffffff"/>
+</svg>

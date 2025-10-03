@@ -25,7 +25,7 @@ export default function RootLayout({
     url: DOMAIN,
     sameAs: [
       "https://twitter.com/SoumyaEXE",
-      "https://www.linkedin.com/in/SoumyaEXE/",
+      "https://www.linkedin.com/in/isoumyadeyy",
       "https://github.com/SoumyaEXE",
       "https://dribbble.com/SoumyaEXE",
       "https://medium.com/@SoumyaEXE",
