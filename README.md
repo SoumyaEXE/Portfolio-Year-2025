@@ -46,6 +46,6 @@ now the chat actually talks back with short, chill responses! 💬✨
 
 
 
-## made with ❤️ by [sagnik](https://x.com/heysagnik)
+## made with ❤️ by [soumya](https://x.com/iSoumyadeepDey)
 
 inspired by [alistair.sh](https://alistair.sh) • powered by [next.js](https://nextjs.org)
