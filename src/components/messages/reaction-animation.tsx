@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Transition } from 'framer-motion';
 
 interface ReactionAnimationProps {
   emoji: string;
@@ -9,33 +9,33 @@ interface ReactionAnimationProps {
 const ANIMATION_CONFIG = {
   duration: 1200,
   exitDelay: 350,
-  backgroundBlur: { duration: 0.25 },
+  backgroundBlur: { duration: 0.25 } as Transition,
   emojiAnimation: { 
     duration: 1.4, 
-    times: [0, 0.3, 0.6, 1],
+    times: [0, 0.3, 0.6, 1] as number[], // ✅ mutable array
     ease: "easeOut"
-  },
+  } as Transition,
   shadowAnimation: {
     duration: 1.1,
-    times: [0, 0.3, 0.6, 1],
+    times: [0, 0.3, 0.6, 1] as number[], // ✅ mutable array
     ease: "easeInOut"
-  },
+  } as Transition,
   rotationAnimation: {
     duration: 0.8,
-    times: [0, 0.6, 1],
+    times: [0, 0.6, 1] as number[], // ✅ mutable array
     ease: [0.34, 1.31, 0.64, 1]
-  },
+  } as Transition,
   particleAnimation: {
     duration: 0.85,
     delay: 0.1,
     ease: "easeOut"
-  },
+  } as Transition,
   glowAnimation: {
     duration: 0.9,
-    times: [0, 0.3, 0.7, 1],
+    times: [0, 0.3, 0.7, 1] as number[], // ✅ mutable array
     ease: "easeOut"
-  }
-} as const;
+  } as Transition
+};
 
 const PARTICLE_CONFIGS = [
   { 
