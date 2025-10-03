@@ -24,7 +24,7 @@ const ANIMATION_CONFIG = {
   rotationAnimation: {
     duration: 0.8,
     times: [0, 0.6, 1] as number[],
-    ease: [0.34, 1.31, 0.64, 1] as number[]
+    ease: [0.34, 1.31, 0.64, 1] as [number, number, number, number]
   },
   particleAnimation: {
     duration: 0.85,
