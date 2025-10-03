@@ -1,4 +1,4 @@
-# sagnik-wtf 🚀
+# soumya-wtf 🚀
 
 sup! this is my corner of the internet - a vibe-check portfolio built with next.js, typescript & tailwind.
 
