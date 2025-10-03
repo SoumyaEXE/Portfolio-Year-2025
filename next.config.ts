@@ -27,8 +27,9 @@ const nextConfig: NextConfig = {
   },
   
   // Ensure proper handling of static assets
+  // Removed optimizeCss experimental feature to avoid critters module issues
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true, // Commented out to prevent critters module error
   },
   
   // Enable trailing slash handling
