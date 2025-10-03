@@ -133,17 +133,6 @@ export const MessageReaction = ({ onSelectReaction, onClose, isVisible }: Messag
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, [onClose, isVisible]);
 
-    const playClickSound = () => {
-        const audio = new Audio('/click.wav');
-        audio.volume = 0.3;
-        audio.play().catch(err => console.log('Audio play failed:', err));
-    };
-
-    const handleReactionClick = (emoji: string) => {
-        playClickSound();
-        onSelectReaction(emoji);
-    };
-
     const containerStyle = {
         initial: { 
             boxShadow: "0 4px 15px rgba(0, 0, 0, 0.15)",
@@ -166,7 +155,7 @@ export const MessageReaction = ({ onSelectReaction, onClose, isVisible }: Messag
             scale: 1.05,
             transition: {
                 duration: 0.6,
-                ease: "easeOut",
+                ease: EASING.easeOut,
                 delay: 0.2
             }
         },
@@ -197,7 +186,7 @@ export const MessageReaction = ({ onSelectReaction, onClose, isVisible }: Messag
                                 variants={itemVariants}
                                 whileHover={animationConfigs.itemHover}
                                 whileTap={animationConfigs.itemTap}
-                                onClick={() => handleReactionClick(reaction.emoji)}
+                                onClick={() => onSelectReaction(reaction.emoji)}
                                 className="text-[20px] relative focus:outline-none px-1 py-1 rounded-full overflow-hidden"
                                 aria-label={`React with ${reaction.label}`}
                                 style={{ transformOrigin: 'center' }}
