@@ -65,17 +65,6 @@ const GRID_ITEMS: GridItem[] = [
     }
   },
   {
-    id: "nextjs-dev-tools",
-    title: "Next.js Dev Tools",
-    date: "February 2025",
-    category: "web",
-    media: {
-      type: "video",
-      src: "/chikki.mp4",
-      alt: "Next.js development tools demo"
-    }
-  },
-  {
     id: "phisguard-app",
     title: "A Phishing Guard App",
     date: "February 2025",
